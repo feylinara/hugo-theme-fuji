@@ -26,8 +26,8 @@
         <h3>{{ i18n "sidebarTags" }}</h3>
         <div>
             {{ range .Site.Taxonomies.tags }}
-            <span>
-                <a href="{{ .Page.RelPermalink }}">{{ .Page.Title }}</a>
+            <span class="sidebar-tag">
+                <a href="{{ .Page.RelPermalink }}">「{{ .Page.Title }}」</a>
             </span>
             {{ end }}
         </div>
